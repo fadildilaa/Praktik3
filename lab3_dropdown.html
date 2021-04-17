@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Universitas Pelita Bangsa</title>
+
+</head>
+<body>
+
+	<style type="text/css">
+	html,body{
+		padding: 0;
+		margin:0;
+		font-family: sans-serif;
+	}
+
+	.menu-malasngoding{
+		background-color: #3141ff;
+	}
+
+	.menu-malasngoding ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.menu-malasngoding > ul > li {
+		float: left;
+	}
+
+	
+	.menu-malasngoding li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	.menu-malasngoding li a:hover{
+		background-color: #2525ff;
+	}
+
+	li.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+
+	.isi-dropdown a:hover {
+		color: #fff !important;
+	}
+
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		background-color: #f9f9f9;
+	}
+
+	.isi-dropdown a {
+		color: #3c3c3c !important;
+	}
+
+	.isi-dropdown a:hover {
+		color: #232323 !important;
+		background: #f3f3f3 !important;
+	}
+</style>
+<style>form p > label {
+		display: inline-block;
+		width: 100px;
+	}
+	form input[type="text"], form textarea {
+		border: 1px solid #197a43;
+	}
+	form input[type="submit"] {
+		border: 1px solid #197a43;
+		background-color: #197a43;
+		color: #ffffff;
+		font-weight: bold;
+		padding: 5px 15px
+	}
+</style>
+
+<header class="header">
+	<div class="menu-malasngoding">
+
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li class="dropdown"><a href="#">Fakultas Teknik</a>
+				<ul class="isi-dropdown">
+					<li><a href="#">Teknik Informatika</a></li>
+					<li><a href="#">Teknik Lingkungan</a></li>
+					<li><a href="#">Teknik Industri</a></li>
+					<li><a href="#">Arsitektur</a></li>
+					<li><a href="#">Teknik Sipil</a></li>
+					<li><a href="#">Teknologi Hasil Pertanian</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#">Fakultas Ekonomi Bisnis dan Ilmu Sosial</a>
+				<ul class="isi-dropdown">
+					<li><a href="#">Magister Managemen</a></li>
+					<li><a href="#">Managemen</a></li>
+					<li><a href="#">D3 Akuntansi</a></li>
+					<li><a href="#">Hukum</a></li>
+					<li><a href="#">PGSD</a></li>
+					<li><a href="#">PGPAUD</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+
+	</div>
+</header>
+
+<br/>
+
+<center>
+	<h1>Selamat datang di Universitas Pelita Bangsa Kampus Megah</h1> <p><h2>Jl. Inspeksi Kalimalang No.9, Cibatu, Cikarang Sel., Bekasi, Jawa Barat 17530</h2></p>
+</center>
+<form action="proses.php" method="post">
+	<fieldset>
+		<legend>Data Mahasiswa</legend>
+		<p>
+			<label for="nama">Nama</label>
+			<input type="text"  id="nama" name="nama">
+		</p>
+		<p>
+			<label for="nim">NIM</label>
+			<input type="number" name="NIM"></input>
+		</p>
+		<p>
+			<label>Jenis Kelamin</label>
+			<input id="jk_l" type="radio" name="kelamin" value="L" /><label for="jk_l">Laki-laki</label>
+			<input id="jk_p" type="radio" name="kelamin" value="P" /><label for="jk_p">Perempuan</label>
+		</p>
+		<p><input type="submit" value="Login"></p>
+	</fieldset>
+</form>
+
+</body>
+</html>
